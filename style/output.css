@@ -678,6 +678,10 @@ video {
   cursor: pointer;
 }
 
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }

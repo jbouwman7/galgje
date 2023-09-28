@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+var_dump($_POST);
+var_dump($_SESSION);
 $words = [
     "Tijgerprint",
     "Paraplu",
@@ -37,11 +38,11 @@ $randomWord = $words[array_rand($words)];
 
 if (!empty($_POST)) {
     if (isset($_POST['word'])) {
-        $_SESSION['chosenWord'] = trim($_POST['word']);
+        $_SESSION['chosenWord'] = strtoupper(trim($_POST['word']));
     }
 
     if (isset($_POST['randomWord'])) {
-        $_SESSION['chosenWord'] = $randomWord;
+        $_SESSION['chosenWord'] = strtoupper($randomWord);
     }
 
     header('location:galgje.php');
