@@ -560,6 +560,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -666,4 +676,8 @@ video {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
