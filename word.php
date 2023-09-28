@@ -37,7 +37,7 @@ $randomWord = $words[array_rand($words)];
 
 if (!empty($_POST)) {
     if (isset($_POST['word'])) {
-        $_SESSION['chosenWord'] = $_POST['word'];
+        $_SESSION['chosenWord'] = trim($_POST['word']);
     }
 
     if (isset($_POST['randomWord'])) {
